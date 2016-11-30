@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+        Generičen naslov
+        {% endblock title %}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div>
+        <h3>Navigacija</h3>
+        <a href="/">Domov</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+
+    <div id="vsebina">
+        {%block vsebina_strani%}
+
+        {%endblock vsebina_strani%}
+    </div>
+</body>
+</html>

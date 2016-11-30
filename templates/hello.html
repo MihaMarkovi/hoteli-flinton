@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{%block title %}
+    Home page
+{% endblock title %}
+
+{%block vsebina_strani%}
+<h1>Hoteli Flinton</h1>
+<img style="width" src="https://exp.cdn-hotels.com/hotels/1000000/150000/140600/140596/140596_275_z.jpg">
+
+<h2>Kakšni smo?</h2>
+<p>So zelo nasmejani in zelo ustrežlijvi. Pri nas boste našli le najboljše stvari.</p>
+<p>Nahajamo se v vseh državah(tudi pri vas).</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>imaš za nas sporočilo?</h2>
+<form action="/rezultat" method="POST">
+  Tvoje ime(neobvezno):<br>
+  <input type="text" name="ime">
+  <br>
+  Tvoj email(obvezno):<br>
+  <input type="text" name="email">
+  <br>
+  Kaj nam želiš sporočiti:<br>
+  <textarea type="text" name="sporocilo"></textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<a href="/vsa_sporocila"><button>vsa sporočila</button></a>
+{%endblock vsebina_strani%}
